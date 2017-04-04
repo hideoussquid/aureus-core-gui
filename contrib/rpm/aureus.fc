@@ -1,0 +1,8 @@
+/usr/bin/aureus-cli		--	gen_context(system_u:object_r:aureus_exec_t,s0)
+/usr/sbin/aureusd		--	gen_context(system_u:object_r:aureus_exec_t,s0)
+/usr/lib(64)?/aureus/aureusd		--	gen_context(system_u:object_r:aureus_exec_t,s0)
+
+/etc/aureus(/.*)?		gen_context(system_u:object_r:aureus_conf_t,s0)
+/var/lib/aureus(/.*)?		gen_context(system_u:object_r:aureus_var_lib_t,s0)
+
+(/var)?/run/aureusd(/.*)?   gen_context(system_u:object_r:aureus_var_run_t,s0)

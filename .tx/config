@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[aureus.qt-translation-014x]
+file_filter = src/qt/locale/aureus_<lang>.ts
+source_file = src/qt/locale/aureus_en.ts
+source_lang = en
